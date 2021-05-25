@@ -60,6 +60,7 @@ img {
   background: #000;
 }
 
+
 /* HEADER */
 
 .header {
@@ -91,6 +92,10 @@ img {
   line-height: 20px;
   padding: 10px 0;
  
+}
+
+.header_menu ul li a.menu_ativo {
+  color: #fff;
 }
 
 .header_menu ul li a:hover {
@@ -229,13 +234,17 @@ img {
   margin: 0 auto;
 }
 
+.qualidade_lista {
+  padding-top: 20px;
+  overflow: auto;
+}
 .qualidade_lista li {
   margin-top: 30px;
   text-align: center;
   padding: 0 40px;
 }
 .qualidade_lista li h3 {
-  margin-top: 20px;
+  margin-top: 10px;
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
@@ -323,6 +332,78 @@ img {
   font-family: Arial;
   font-weight: bold;
   font-size: 16px;
+}
+/**//**//**//**//**//**//**//**//**//**/
+/**//**//**//**//**//**//**//**//**//**/
+/**//**//**//**//**//**//**//**//**//**/
+/**//**//**//**//**//**//**//**//**//**/
+/* INTRODUÇÃO INTERNA*/
+.introducao_interna {
+  width: 100%;
+  margin-top: 80px;
+  padding-top: 40px;
+  height: 160px;
+  text-align: center;
+  background-size: cover;
+}
+.introducao_interna h1 {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+}
+.introducao_interna p {
+  font-weight: bold;
+  color: #fff;
+}
+
+.introducao_interna p::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 10px auto;
+  background: #fff;
+}
+
+/* SOBRE */
+
+.interna_sobre {
+  background: url("../img/bg-sobre.jpg");
+}
+
+.missao_sobre {
+  padding-top: 60px;
+}
+.missao_sobre p {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 1em;
+  padding-right: 60px;
+}
+
+.subtitulo_interno {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: .1em;
+  color: #000;
+  text-transform: uppercase;
+  
+}
+
+.subtitulo_interno:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 8px 0;
+  background: #000;
+}
+
+.foto-equipe {
+  padding-top: 20px;
 }
 
 
