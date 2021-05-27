@@ -18,6 +18,7 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 .btn {
@@ -67,7 +68,6 @@ img {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 80px;
   background: #fec63e;
   padding: 10px 0; 
   z-index: 10;
@@ -91,7 +91,6 @@ img {
   font-size: 14px;
   line-height: 20px;
   padding: 10px 0;
- 
 }
 
 .header_menu ul li a.menu_ativo {
@@ -162,6 +161,7 @@ img {
   text-align: center;
   height: 320px;
 }
+
 .produtos_lista li h3 {
   margin-top: 20px;
   font-weight: bold;
@@ -260,7 +260,7 @@ img {
   display: block;
   width: 60px;
   height: 3px;
-  margin: 4px auto;
+  margin: 4px auto 10px auto;
   background: #000;
 }
 
@@ -406,6 +406,8 @@ img {
   background: #000;
 }
 
+
+
 .foto-equipe {
   padding-top: 20px;
 }
@@ -499,7 +501,7 @@ img {
 
 .orcamento h2{
   color: #fec63e;
-  padding: 40px;
+  padding: 40px 40px 10px 40px;
 }
 .orcamento h2:after{
   background: #fec63e;
@@ -510,12 +512,11 @@ img {
 }
 
 .form label {
-  margin: 10px 0;
+  margin: 5px 0 10px 0;
   display: block;
   color: #fff;
   font-family: Georgia, 'Times New Roman', serif;
   font-size: 18px;
-  
   line-height: 25px;
 }
 
@@ -627,6 +628,9 @@ img {
 .contato_form label {
   color: #000;
 }
+.contato_form input {
+  color: #000;
+}
 
 .contato_form h3 {
   font-size: 18px;
@@ -649,5 +653,184 @@ img {
 .contato_form button:hover {
   color: #000;
   border: #000;
+}
+
+/**********************************************************/
+
+/* RESPONSIVIDADE */
+
+@media only screen and (min-width: 768px) and (max-width: 979px){
+  .qualidade:after {
+    right: 55px;
+  }
+
+  .qualidade_lista li {
+    padding: 0 10px;
+  }
+
+  /* FOOTER */
+  .sociais ul li a {
+    border: 3px solid #fec63e;
+    display: block;
+    padding: 6px;
+  }
+  .sociais ul li a img {
+    width: 26px;
+    height: 26px;
+  }
+
+  .missao_sobre p {
+    padding-left: 5px;
+  }
+
+  .qualidade img {
+    width: 180px;
+    height: 100px;
+  }
+
+  .qualidade:after {
+    content: "";
+    width: 610px;
+    height: 83px;
+    top: 215px;
+    right: 79px;
+  }
+
+  /* PRODUTOS */
+
+  .produto_item h2 {
+    top: -150px;
+    margin-bottom: -50px;
+  }
+  .produto_icone {
+    padding: 41px 0;
+  }
+  .produto_info p {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 20px 30px;
+    height: 120px;
+  }
+  .produto_info ul li {
+    width: 181px;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 767px){
+
+  /* HEADER */
+  .header {
+    position: relative;
+    padding-bottom: 0;
+  }
+  .header img {
+    margin: 0 auto 20px auto;
+  }
+
+  .header_menu {
+    text-align: center;
+  }
+
+  .header_menu ul li {
+    margin: 0 5px 5px 5px;
+  }
+
+  .header_menu ul li a {
+    border: 3px solid #000;
+    width: 136px;
+    display: block;
+    float: left;
+  }
+
+  .header_menu ul li a:hover{
+    border-color: #fff;
+  }
+
+  .header_menu ul li a.menu_ativo {
+    border-color: #fff;
+  }
+
+  /* INTRODUÇÂO */
+
+  .intro {
+    margin-top: 0;
+    padding: 40px;
+    height: 320px;
+    background: url("../img/bg-mobile.jpg") no-repeat;
+    
+  }
+
+  .intro h1 {
+    font-size: 36px;
+  }
+  .introducao_interna {
+    margin-top: 0;
+    
+  }
+  .produtos, .qualidade .subtitulo {
+    margin-top: -20px;
+  }
+
+  /* FOOTER */
+  
+  
+  .call {
+    padding-top: 10px;
+  }
+
+  .qualidade:after {
+    display: none;
+  }
+
+  /* SOBRE */
+
+  .missao_sobre p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 1em;
+    padding-right: 0px;
+  }
+
+  /* PRODUTOS */
+
+  .produto_item h2 {
+    top: -100px;
+    margin-bottom: -68px;
+  }
+  .produto_icone {
+    padding: 41px 0;
+  }
+  .produto_info p {
+    font-size: 14px;
+    line-height: 20px;
+    height: auto;
+    padding: 20px 30px;
+    height: 120px;
+  }
+  .produto_info ul li {
+    width: 149px;
+    height: 49px;
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 14px;
+  }
+  .orcamento .subtitulo {
+    padding: 40px 40px 0 40px
+  }
+  .form{
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+  .orcamento_dados ul {
+    padding-right: 0px;
+  }
+
+  /* CONTATO */
+
+  .form {
+    margin-top: 1px;
+    padding-right: 0px;
+  }
+  
 }
 
