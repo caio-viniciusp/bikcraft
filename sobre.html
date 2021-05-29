@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
   <title>BikCraft</title>
 </head>
 <body>
@@ -33,14 +34,14 @@
 
   <section class="introducao_interna interna_sobre">
     <div class="container">
-      <h1>Sobre</h1>
-      <p>conheça a BikCraft</p>
+      <h1 data-anime="400" class="fadeInDown">Sobre</h1>
+      <p data-anime="800" class="fadeInDown">conheça a BikCraft</p>
     </div>
   </section>
 
   <!-- MISSÂO -->
 
-  <section class="missao_sobre container">
+  <section class="missao_sobre container fadeInDown "data-anime="1200">
     <div class="grid-10">
       <h2 class="subtitulo_interno">História, missão e visão</h2>
       <p>O verdadeiro segredo da felicidade está em ter o genuíno interesse por todos os detalhes da vida cotidiana.
@@ -115,6 +116,9 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 
 
   

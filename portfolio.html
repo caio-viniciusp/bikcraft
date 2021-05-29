@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
   <title>BikCraft</title>
 </head>
 <body>
@@ -33,24 +34,46 @@
 
   <section class="introducao_interna interna_portfolio">
     <div class="container">
-      <h1>PORTFÓLIO</h1>
-      <p>conheça nossos projetos</p>
+      <h1 data-anime="400" class="fadeInDown">PORTFÓLIO</h1>
+      <p data-anime="800" class="fadeInDown">conheça nossos projetos</p>
     </div>
   </section>
 
-  <section class="container">
+  <section class="container" data-slide="quote" data-anime="800">
     <blockquote class="quote_cliente">
       <p>
         ""O verdadeiro segredo da felicidade está em ter o genuíno interesse por todos os detalhes da vida cotidiana. O verdadeiro segredo da felicidade está em ter o genuíno interesse por todos os detalhes da vida cotidiana""
       </p>
       <cite>Barbara Moss</cite>
     </blockquote>
+    <blockquote class="quote_cliente">
+      <p>
+        "o genuíno interesse por todos os detalhes da vida cotidiana é verdadeiro segredo da felicidade."
+      </p>
+      <cite>Paulo Souza</cite>
+    </blockquote>
+    <blockquote class="quote_cliente">
+      <p>
+        ""O verdadeiro segredo da felicidade está em ter o genuíno interesse por todos os detalhes da vida cotidiana. O verdadeiro segredo da felicidade está em ter o genuíno interesse por todos os detalhes da vida cotidiana""
+      </p>
+      <cite>Maria Silva</cite>
+    </blockquote>
   </section>
 
   <!-- PORTFOLIO -->
 
   <section class="portfolio">
-    <div class="container">
+    <div class="container" data-slide="portfolio">
+      <ul class="portfolio_lista">
+        <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta Retro"></li>
+        <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio"></li>
+        <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte"></li>
+      </ul>
+      <ul class="portfolio_lista">
+        <li class="grid-8"><img src="img/produtos/bikcraft-retro.jpg" alt="Bicicleta Retro"></li>
+        <li class="grid-8"><img src="img/produtos/bikcraft-passeio.jpg" alt="Bicicleta Passeio"></li>
+        <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte"></li>
+      </ul>
       <ul class="portfolio_lista">
         <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta Retro"></li>
         <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio"></li>
@@ -103,7 +126,10 @@
         </div>
       </div>
     </footer>
-
+    
+    <script src="./js/simple-slide.js"></script>
+    <script src="./js/simple-anime.js"></script>
+    <script src="./js/script.js"></script>
 
   
 </body>

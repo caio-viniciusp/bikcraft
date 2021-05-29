@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
   <title>BikCraft</title>
 </head>
 <body>
@@ -33,12 +34,12 @@
 
   <section class="introducao_interna interna_contato">
     <div class="container">
-      <h1>CONTATO</h1>
-      <p>entre em contato conosco</p>
+      <h1 data-anime="400" class="fadeInDown">CONTATO</h1>
+      <p data-anime="800" class="fadeInDown">entre em contato conosco</p>
     </div>
   </section>
 
-  <section class="contato_form">
+  <section class="contato_form" data-anime="1200">
     <div class="container">
       
       <form action="" id="form_orcamento" class="form grid-8">
@@ -111,7 +112,8 @@
       </div>
     </footer>
 
-
+    <script src="./js/simple-anime.js"></script>
+    <script src="./js/script.js"></script>
   
 </body>
 </html>
